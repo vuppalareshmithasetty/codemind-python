@@ -1,0 +1,18 @@
+n=int(input())
+z=0
+if(n>0):
+    while(n):
+        s=n%10;
+        z=s+z*10
+        n=n//10
+else:
+    n=n*(-1)
+    while(n):
+        s=n%10;
+        z=s+z*10
+        n=n//10
+    z=z*(-1)
+if(z%10==0):
+    print(z/10)
+else:
+    print(z)
