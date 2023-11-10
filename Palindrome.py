@@ -1,6 +1,5 @@
 n=input()
-rev=n[::-1]
-if(n==rev):
-    print("True")
+if n == n[::-1]:
+    print("Palindrome")
 else:
-    print("False")
+    print("Not Palindrome")
